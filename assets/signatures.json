@@ -1,0 +1,4 @@
+{"_note":"Small demo signature set (SHA-256). Includes the EICAR test file. Extend with real IOC feeds.","sha256":{
+"275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f":"EICAR-Test-File",
+"2546dcffc5ad854d4ddc64fbf056871cd5a00f2471cb7a5bfd4ac23b6e9eedad":"EICAR-Test-File (with newline)",
+"131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267":"EICAR-in-ZIP"}}

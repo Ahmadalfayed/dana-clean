@@ -1,0 +1,24 @@
+{
+  "name": "dana-clean",
+  "productName": "Dana Clean",
+  "version": "1.0.0",
+  "description": "دانة - منظف وفاحص أمان للكمبيوتر",
+  "main": "src/main.js",
+  "bin": { "dana": "src/cli.js" },
+  "author": "Watan Al-Nahar",
+  "license": "SEE LICENSE IN LICENSE",
+  "scripts": {
+    "start": "electron .",
+    "cli": "node src/cli.js",
+    "dist:win": "electron-builder --win portable zip --x64",
+    "dist:linux": "electron-builder --linux AppImage"
+  },
+  "build": {
+    "appId": "kw.watan.danaclean",
+    "productName": "Dana Clean",
+    "files": ["src/**", "renderer/**", "assets/**", "LICENSE"],
+    "win": { "icon": "assets/icon.png", "signAndEditExecutable": false, "artifactName": "DanaClean-${version}-${arch}.${ext}" },
+    "directories": { "output": "dist" }
+  },
+  "devDependencies": { "electron": "^33.2.0", "electron-builder": "^25.1.8" }
+}
